@@ -145,6 +145,7 @@ export const phonePath = (
 );
 
 import { ActividadesCardProps, HorariosProps } from "@/types/types";
+
 import septimoUNO from "/public/horarios/7-1.png";
 import septimoDOS from "/public/horarios/7-2.png";
 import septimoTRES from "/public/horarios/7-3.png";
