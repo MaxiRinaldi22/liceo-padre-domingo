@@ -24,19 +24,19 @@ export function CarruselComponent({
       <div className="hidden h-56 sm:h-64 md:block xl:h-96 2xl:h-96">
         <Carousel theme={CustomTheme}>
           <Image
-            src={desktopImg1}
+            src={desktopImg1 ?? ""}
             alt="..."
             className="h-full w-full object-cover"
             layout="responsive"
           />
           <Image
-            src={desktopImg2}
+            src={desktopImg2 ?? ""}
             alt="..."
             className="h-full w-full object-cover"
             layout="responsive"
           />
           <Image
-            src={desktopImg3}
+            src={desktopImg3 ?? ""}
             alt="..."
             className="h-full w-full"
             layout="responsive"

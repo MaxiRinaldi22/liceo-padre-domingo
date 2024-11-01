@@ -250,6 +250,7 @@ export const ACTIVIDADES_DATA: ActividadesCardProps[] = [
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod perspiciatis iure, nisi numquam laborum ea voluptate sit, quas, nobis hic nihil! Veniam vel tenetur deserunt. Nisi deserunt accusamus illo dolorum, fugiat tempore fuga, omnis saepe autem veritatis eos corporis, assumenda dolorem aut. Dolores atque distinctio nihil fugit ipsum quaerat enim?",
     icon: ingles,
+    images: [ajedrezImg1, ajedrezImg1],
   },
   {
     id: "coro",
@@ -277,6 +278,7 @@ export const ACTIVIDADES_DATA: ActividadesCardProps[] = [
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod perspiciatis iure, nisi numquam laborum ea voluptate sit, quas, nobis hic nihil! Veniam vel tenetur deserunt. Nisi deserunt accusamus illo dolorum, fugiat tempore fuga, omnis saepe autem veritatis eos corporis, assumenda dolorem aut. Dolores atque distinctio nihil fugit ipsum quaerat enim?",
     icon: handball,
+    images: [ajedrezImg1, ajedrezImg1],
   },
   {
     id: "futbol",
@@ -285,6 +287,7 @@ export const ACTIVIDADES_DATA: ActividadesCardProps[] = [
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod perspiciatis iure, nisi numquam laborum ea voluptate sit, quas, nobis hic nihil! Veniam vel tenetur deserunt. Nisi deserunt accusamus illo dolorum, fugiat tempore fuga, omnis saepe autem veritatis eos corporis, assumenda dolorem aut. Dolores atque distinctio nihil fugit ipsum quaerat enim?",
     icon: futbol,
+    images: [ajedrezImg1, ajedrezImg1],
   },
   {
     id: "basquetbol",
@@ -293,6 +296,7 @@ export const ACTIVIDADES_DATA: ActividadesCardProps[] = [
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod perspiciatis iure, nisi numquam laborum ea voluptate sit, quas, nobis hic nihil! Veniam vel tenetur deserunt. Nisi deserunt accusamus illo dolorum, fugiat tempore fuga, omnis saepe autem veritatis eos corporis, assumenda dolorem aut. Dolores atque distinctio nihil fugit ipsum quaerat enim?",
     icon: basquet,
+    images: [ajedrezImg1, ajedrezImg1],
   },
   {
     id: "voleibol",
@@ -301,5 +305,6 @@ export const ACTIVIDADES_DATA: ActividadesCardProps[] = [
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod perspiciatis iure, nisi numquam laborum ea voluptate sit, quas, nobis hic nihil! Veniam vel tenetur deserunt. Nisi deserunt accusamus illo dolorum, fugiat tempore fuga, omnis saepe autem veritatis eos corporis, assumenda dolorem aut. Dolores atque distinctio nihil fugit ipsum quaerat enim?",
     icon: voleibol,
+    images: [ajedrezImg1, ajedrezImg1],
   },
 ];
