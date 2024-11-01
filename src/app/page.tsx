@@ -18,8 +18,9 @@ import padreDomingo from "/public/padreDomingo.png";
 // GALERIA
 import misa from "/public/galeria/misa.jpg";
 import grupal from "/public/galeria/grupal2017.jpg";
+
 // CARRUSEL
-import inscripcionesPc from "/public/carrusel/inscripcionesPc.png";
+import inscripcionesPc from "/public/carrusel/InscripcionesPC.png";
 import inscripcionesMOBILE from "/public/carrusel/inscripcionesMOBILE.png";
 
 export default function Home() {
