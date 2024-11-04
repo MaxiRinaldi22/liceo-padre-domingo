@@ -239,8 +239,6 @@ import futbol from "/public/icons/futbolIcon.png";
 import voleibol from "/public/icons/voleibolIcon.png";
 import basquet from "/public/icons/basquetIcon.png";
 
-// BORRAR
-import ajedrezImg1 from "@/public/deportes.jpg";
 
 // Voluntariado
 import voluntariado1 from "/public/actividades/voluntariado1.jpeg";
