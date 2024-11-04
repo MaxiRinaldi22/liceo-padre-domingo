@@ -44,7 +44,7 @@ export default function ActividadesPage() {
               <p>{item.description}</p>
 
               <div className="flex h-full w-full flex-col gap-5 lg:flex-row">
-                <div className="flex h-[700px] flex-col gap-1">
+                <div className="flex lg:h-[700px] flex-col gap-1">
                   {item.images.length > 1 &&
                     item.images.map((image, id) => (
                       <Image
