@@ -239,8 +239,39 @@ import futbol from "/public/icons/futbolIcon.png";
 import voleibol from "/public/icons/voleibolIcon.png";
 import basquet from "/public/icons/basquetIcon.png";
 
-// AJEDREZ imgs
+// BORRAR
 import ajedrezImg1 from "@/public/deportes.jpg";
+
+// Voluntariado
+import voluntariado1 from "/public/actividades/voluntariado1.jpeg";
+import voluntariado2 from "/public/actividades/voluntariado2.jpeg";
+import voluntariado3 from "/public/actividades/voluntariado3.jpeg";
+
+// Ingles
+import anglo from "/public/actividades/anglo.png";
+
+// Coro y baile
+import coroYbalile from "/public/actividades/coroybaile.jpeg";
+
+// Handball
+import handball1 from "/public/actividades/handball1.jpeg";
+import handball2 from "/public/actividades/handball2.jpeg";
+import handball3 from "/public/actividades/handball3.jpeg";
+
+// Futbol
+import futbol1 from "/public/actividades/futbol1.jpeg";
+import futbol2 from "/public/actividades/futbol2.jpeg";
+import futbol3 from "/public/actividades/futbol3.jpeg";
+
+// Basquet
+import basquet1 from "/public/actividades/basquet1.jpeg";
+import basquet2 from "/public/actividades/basquet2.jpeg";
+import basquet3 from "/public/actividades/basquet3.jpeg";
+
+// Voleibol
+import voleibol1 from "/public/actividades/volei1.jpeg";
+import voleibol2 from "/public/actividades/volei2.jpeg";
+import voleibol3 from "/public/actividades/volei3.jpeg";
 
 export const ACTIVIDADES_DATA: ActividadesCardProps[] = [
   {
@@ -249,37 +280,40 @@ export const ACTIVIDADES_DATA: ActividadesCardProps[] = [
     shortDescription:
       "Preparamos a nuestros alumnos para exámenes internacionales y diplomas que exigen las Universidades",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod perspiciatis iure, nisi numquam laborum ea voluptate sit, quas, nobis hic nihil! Veniam vel tenetur deserunt. Nisi deserunt accusamus illo dolorum, fugiat tempore fuga, omnis saepe autem veritatis eos corporis, assumenda dolorem aut. Dolores atque distinctio nihil fugit ipsum quaerat enim?",
+      "En colaboración con el prestigioso Instituto ANGLO, brindamos a nuestros estudiantes la oportunidad de aprender inglés en el horario de la tarde, integrando una herramienta esencial para su desarrollo académico y profesional. Conscientes de la importancia del inglés como idioma global y de su creciente exigencia en las universidades y el ámbito laboral, hemos diseñado un programa que busca no solo enseñar el idioma, sino también preparar a nuestros alumnos para los desafíos futuros, capacitándolos en una competencia clave que les abrirá puertas en su vida universitaria y profesional.",
     icon: ingles,
-    images: [ajedrezImg1, ajedrezImg1],
+    images: [anglo],
   },
   {
-    id: "coro",
+    id: "coro-baile",
     title: "CORO Y BAILE",
-    shortDescription: "Introduccion sobre la actividad",
+    shortDescription:
+      "Coro y baile permiten a nuestros estudiantes expresarse creativamente y fortalecer la confianza en equipo.",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod perspiciatis iure, nisi numquam laborum ea voluptate sit, quas, nobis hic nihil! Veniam vel tenetur deserunt. Nisi deserunt accusamus illo dolorum, fugiat tempore fuga, omnis saepe autem veritatis eos corporis, assumenda dolorem aut. Dolores atque distinctio nihil fugit ipsum quaerat enim?",
+      "El coro y el baile son espacios donde nuestros estudiantes pueden expresarse y compartir su creatividad. Cada ensayo es una oportunidad para conectar con sus compañeros, fortalecer su confianza y disfrutar del arte en un ambiente acogedor y colabor",
     icon: coro,
-    images: [ajedrezImg1, ajedrezImg1],
+    images: [coroYbalile],
   },
   {
     id: "voluntariado",
     title: "VOLUNTARIADO",
-    shortDescription: "Introduccion sobre la actividad",
+    shortDescription:
+      "Inspirados por el Padre Domingo, fomentamos el voluntariado para inculcar solidaridad.",
     description:
       "Inspirados en el legado del Padre Domingo y su incansable labor por el bien común, en nuestro liceo fomentamos el voluntariado como un pilar fundamental de nuestra propuesta educativa. A través de estas actividades, buscamos que los estudiantes desarrollen un sentido de solidaridad y compromiso social, aprendiendo el valor de ayudar a quienes más lo necesitan. El voluntariado no solo permite a nuestros jóvenes crecer como personas, sino también construir una comunidad más justa y empática, en la que puedan marcar una diferencia y vivir los valores franciscanos en su día a día.",
     icon: voluntariado,
-    images: [ajedrezImg1],
+    images: [voluntariado1, voluntariado2, voluntariado3],
   },
 
   {
     id: "handball",
     title: "HANDBALL",
-    shortDescription: "Introduccion sobre la actividad",
+    shortDescription:
+      "Nuestros estudiantes desarrollan compañerismo y habilidades físicas mientras trabajan en equipo.",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod perspiciatis iure, nisi numquam laborum ea voluptate sit, quas, nobis hic nihil! Veniam vel tenetur deserunt. Nisi deserunt accusamus illo dolorum, fugiat tempore fuga, omnis saepe autem veritatis eos corporis, assumenda dolorem aut. Dolores atque distinctio nihil fugit ipsum quaerat enim?",
+      "En nuestras prácticas de handball, los estudiantes aprenden a trabajar en equipo y a apoyarse mutuamente. Además de desarrollar habilidades físicas, fortalecen su compromiso y compañerismo en cada encuentro. Nos enfocamos en incentivar y motivar a todos los jugadores, buscando siempre competencias y desafíos nuevos.",
     icon: handball,
-    images: [ajedrezImg1, ajedrezImg1],
+    images: [handball1, handball2, handball3],
   },
   {
     id: "futbol",
@@ -288,24 +322,26 @@ export const ACTIVIDADES_DATA: ActividadesCardProps[] = [
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod perspiciatis iure, nisi numquam laborum ea voluptate sit, quas, nobis hic nihil! Veniam vel tenetur deserunt. Nisi deserunt accusamus illo dolorum, fugiat tempore fuga, omnis saepe autem veritatis eos corporis, assumenda dolorem aut. Dolores atque distinctio nihil fugit ipsum quaerat enim?",
     icon: futbol,
-    images: [ajedrezImg1, ajedrezImg1],
+    images: [futbol1, futbol2, futbol3],
   },
   {
     id: "basquetbol",
     title: "BASQUETBOL",
-    shortDescription: "Introduccion sobre la actividad",
+    shortDescription:
+      "En el básquet, nuestros estudiantes disfrutan del deporte y aprenden a superar desafíos juntos.",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod perspiciatis iure, nisi numquam laborum ea voluptate sit, quas, nobis hic nihil! Veniam vel tenetur deserunt. Nisi deserunt accusamus illo dolorum, fugiat tempore fuga, omnis saepe autem veritatis eos corporis, assumenda dolorem aut. Dolores atque distinctio nihil fugit ipsum quaerat enim?",
+      "A través del básquet, nuestros estudiantes fortalecen sus habilidades físicas y estratégicas. Es una actividad que fomenta el compañerismo y les enseña a superar desafíos juntos, disfrutando del deporte en equipo.",
     icon: basquet,
-    images: [ajedrezImg1, ajedrezImg1],
+    images: [basquet1, basquet2, basquet3],
   },
   {
     id: "voleibol",
     title: "VOLEIBOL",
-    shortDescription: "Introduccion sobre la actividad",
+    shortDescription:
+      "El vóley fortalece la confianza, la coordinación y el compañerismo entre nuestros estudiantes.",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod perspiciatis iure, nisi numquam laborum ea voluptate sit, quas, nobis hic nihil! Veniam vel tenetur deserunt. Nisi deserunt accusamus illo dolorum, fugiat tempore fuga, omnis saepe autem veritatis eos corporis, assumenda dolorem aut. Dolores atque distinctio nihil fugit ipsum quaerat enim?",
+      "En el vóley, nuestros estudiantes disfrutan de un ambiente de respeto y colaboración. Aprenden a comunicarse y a confiar en sus compañeros, mejorando tanto su coordinación como el espíritu de equipo. ",
     icon: voleibol,
-    images: [ajedrezImg1, ajedrezImg1],
+    images: [voleibol1, voleibol2, voleibol3],
   },
 ];

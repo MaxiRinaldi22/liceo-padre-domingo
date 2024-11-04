@@ -21,7 +21,7 @@ export default function NoticiasPage() {
                 alt="..."
                 width={300}
                 height={300}
-                className="w-full"
+                className="w-full max-h-[400px]"
               />
               <div className="flex h-full flex-col justify-between p-2">
                 <div>

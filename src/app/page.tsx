@@ -13,7 +13,7 @@ import { CARDS_INFO } from "@/utils/consts";
 
 // IMAGENES
 import catedral from "../public/catedral.jpg";
-import padreDomingo from "/public/padreDomingo.png";
+import escudo from "/public/escudo.png";
 
 // GALERIA
 import misa from "/public/galeria/misa.jpg";
@@ -22,6 +22,10 @@ import grupal from "/public/galeria/grupal2017.jpg";
 // CARRUSEL
 import inscripcionesPc from "/public/carrusel/InscripcionesPC.png";
 import inscripcionesMOBILE from "/public/carrusel/inscripcionesMOBILE.png";
+import inglesPC from "/public/carrusel/inglesPC.png";
+import inglesMOBILE from "/public/carrusel/inglesMOBILE.png";
+import egresadosPC from "/public/carrusel/egresadosPC.png";
+import egresadosMOBILE from "/public/carrusel/egresadosMOBILE.png";
 
 export default function Home() {
   const [isTop, setIsTop] = useState(true);
@@ -46,15 +50,15 @@ export default function Home() {
     <section className="h-full w-full bg-white pt-[8vh]">
       <CarruselComponent
         desktopImg1={inscripcionesPc}
-        desktopImg2={inscripcionesPc}
-        desktopImg3={inscripcionesPc}
+        desktopImg2={inglesPC}
+        desktopImg3={egresadosPC}
         mobileImg1={inscripcionesMOBILE}
-        mobileImg2={inscripcionesMOBILE}
-        mobileImg3={inscripcionesMOBILE}
+        mobileImg2={inglesMOBILE}
+        mobileImg3={egresadosMOBILE}
       />
       <Margin>
         <section
-          className={`flex min-h-[45vh] flex-col justify-center p-5 py-10 md:gap-10 md:pb-0 lg:flex-row ${!isTop ? "md:mb-[50px]" : ""}`}
+          className={`flex min-h-[45vh] flex-col items-center justify-center p-5 py-10 md:gap-10 md:pb-0 lg:flex-row ${!isTop ? "md:mb-[50px]" : ""}`}
         >
           <div className="flex flex-col justify-center gap-5">
             <h1 className="border-l-2 border-dark-brown px-2 text-lg font-semibold text-black md:text-xl">
@@ -76,11 +80,11 @@ export default function Home() {
 
           <div className="hidden h-full min-w-60 lg:block">
             <Image
-              src={padreDomingo}
+              src={escudo}
               alt="Padre Domingo"
               width={400}
               height={530}
-              className="maskImage"
+              className="h-full w-full flex items-center justify-center"
             />
           </div>
         </section>

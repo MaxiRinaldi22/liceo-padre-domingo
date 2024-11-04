@@ -8,32 +8,15 @@ type Noticias = {
 }
 
 
-import felizAno from "/public/noticias/felizAno.jpg";
+import escudo from "/public/escudo.png";
 
 export const NOTICIAS_INFO: Noticias[] = [
     {
-        title: "Lorem ipsum dolor sit",
-        date: "Octubre 25, 2024",
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque qui veritatis vel, molestias quasi velit perferendis obcaecati quaerat nobis corporis.",
-        img: felizAno,
+        title: "Nueva pagina web",
+        date: "Noviembre 4, 2024",
+        text: "Estrenamos nuestra nueva página web, brindando información actualizada y recursos educativos para estudiantes, familias y docentes.",
+        img: escudo,
     },
-    {
-        title: "Lorem ipsum dolor sit",
-        date: "Octubre 25, 2024",
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque qui veritatis vel, molestias quasi velit perferendis obcaecati quaerat nobis corporis.",
-        img: felizAno,
-    },
-    {
-        title: "Lorem ipsum dolor sit",
-        date: "Octubre 25, 2024",
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque qui veritatis vel, molestias quasi velit perferendis obcaecati quaerat nobis corporis.",
-        img: felizAno,
-    },
-    {
-        title: "Lorem ipsum dolor sit",
-        date: "Octubre 25, 2024",
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque qui veritatis vel, molestias quasi velit perferendis obcaecati quaerat nobis corporis.",
-        img: felizAno,
-    }
-
+    
+    
 ]

@@ -4,7 +4,7 @@ import { useState } from "react";
 import { Dialog, DialogPanel, PopoverGroup } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { PAGES_ENDPONTS } from "../utils/consts";
-import escudo from "../public/escudo.png";
+import escudo from "/public/escudo.png";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";

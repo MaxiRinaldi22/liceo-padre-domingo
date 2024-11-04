@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { Margin } from "./Margin";
-import escudo from "../public/escudo.png";
+import escudo from "/public/escudo.png";
 import { Icon } from "@/utils/Icons";
 import { mailPath, phonePath, ubiPath } from "@/utils/consts";
 export default function Footer() {

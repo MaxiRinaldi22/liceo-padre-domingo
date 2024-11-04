@@ -43,8 +43,8 @@ export default function ActividadesPage() {
 
               <p>{item.description}</p>
 
-              <div className="flex h-full w-full flex-col gap-5  lg:flex-row">
-                <div className="flex flex-col gap-5">
+              <div className="flex h-full w-full flex-col gap-5 lg:flex-row">
+                <div className="flex h-[700px] flex-col gap-1">
                   {item.images.length > 1 &&
                     item.images.map((image, id) => (
                       <Image
@@ -54,7 +54,7 @@ export default function ActividadesPage() {
                         width={300}
                         height={300}
                         onClick={() => setCurrentImg(id)}
-                        className={`cursor-pointer ${id === currentImg ? "lg:border-2 lg:border-primary-color" : ""} h-1/3 w-full`}
+                        className={`cursor-pointer object-cover object-[top_center] ${id === currentImg ? "lg:border-4 lg:border-primary-color" : ""} h-1/3 w-full`}
                       />
                     ))}
                 </div>
@@ -65,7 +65,7 @@ export default function ActividadesPage() {
                       width={400}
                       height={400}
                       alt="Actividad"
-                      className="h-full w-full"
+                      className="h-[700px] w-full object-cover object-[top_center]"
                     />
                   </div>
                 ) : (
