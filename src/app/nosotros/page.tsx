@@ -1,6 +1,5 @@
 import { Margin } from "@/components/Margin";
-import Counter from "@/utils/IncrementNumber";
-import { BANER_INFO, INFRAESTRUCTURA_INFO, LIST_INFO } from "@/utils/consts";
+import { INFRAESTRUCTURA_INFO, LIST_INFO } from "@/utils/consts";
 import { CarruselComponent } from "@/components/CarouselComponent";
 import { MainTitle } from "@/components/MainTitle";
 
