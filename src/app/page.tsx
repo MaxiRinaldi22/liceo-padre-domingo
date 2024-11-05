@@ -12,7 +12,6 @@ import Image from "next/image";
 import { CARDS_INFO } from "@/utils/consts";
 
 // IMAGENES
-import catedral from "../public/catedral.jpg";
 import escudo from "/public/escudo.png";
 
 // GALERIA
