@@ -44,20 +44,7 @@ export const PAGES_ENDPONTS = [
   },
 ];
 
-export const BANER_INFO = [
-  {
-    text: "Alumnos en 2023",
-    value: 320,
-  },
-  {
-    text: "Años",
-    value: 13,
-  },
-  {
-    text: "Egresados",
-    value: 4212,
-  },
-];
+
 
 import nosotros from "/public/icons/nosotrosIcon.png";
 import educacion from "/public/icons/educacionIcon.png";
@@ -110,11 +97,11 @@ export const LIST_INFO = [
   },
   {
     id: 5,
-    title: "Dos amplios patios",
+    title: "Dos patios con zona exterior e interior ",
   },
   {
     id: 6,
-    title: "Aria de deportes y salon de actos",
+    title: "Gimnasio cerrado y equipamiento",
   },
 ];
 
@@ -316,10 +303,8 @@ export const ACTIVIDADES_DATA: ActividadesCardProps[] = [
   {
     id: "futbol",
     title: "FUTBOL",
-    shortDescription: "Introduccion sobre la actividad",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod perspiciatis iure, nisi numquam laborum ea voluptate sit, quas, nobis hic nihil! Veniam vel tenetur deserunt. Nisi deserunt accusamus illo dolorum, fugiat tempore fuga, omnis saepe autem veritatis eos corporis, assumenda dolorem aut. Dolores atque distinctio nihil fugit ipsum quaerat enim?",
-    icon: futbol,
+    shortDescription: "Nuestros estudiantes fortalecen su compañerismo mientras aprenden a trabajar en equipo y superarse.",
+    description: "En nuestras prácticas de fútbol, los estudiantes aprenden a trabajar en equipo, a comunicarse eficazmente y a apoyarse mutuamente en el campo de juego. Más allá de mejorar sus habilidades técnicas, fortalecen valores como el compromiso y el compañerismo en cada partido y entrenamiento. Nos enfocamos en motivar a cada jugador, promoviendo el respeto y la perseverancia mientras buscamos constantemente nuevos desafíos y competencias para su desarrollo deportivo y personal.",    icon: futbol,
     images: [futbol1, futbol2, futbol3],
   },
   {

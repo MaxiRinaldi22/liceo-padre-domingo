@@ -18,6 +18,8 @@ import escudo from "/public/escudo.png";
 // GALERIA
 import misa from "/public/galeria/misa.jpg";
 import grupal from "/public/galeria/grupal2017.jpg";
+import handball from "/public/actividades/handball1.jpeg";
+import liceo from "../public/liceo3.jpg"
 
 // CARRUSEL
 import inscripcionesPc from "/public/carrusel/InscripcionesPC.png";
@@ -122,7 +124,7 @@ export default function Home() {
           <div className="flex items-center justify-start px-5 pb-5">
             <MainTitle text="IMAGENES" />
           </div>
-          <Galleria img1={catedral} img2={misa} img3={grupal} img4={catedral} />
+          <Galleria img1={egresadosMOBILE} img2={misa} img3={grupal} img4={handball} img5={liceo}/>
         </Margin>
       </section>
     </section>

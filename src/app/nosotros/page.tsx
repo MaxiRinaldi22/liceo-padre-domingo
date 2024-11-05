@@ -25,17 +25,28 @@ export default function NosotrosPage() {
           >
             <MainTitle text="QUIENES SOMOS" />
             <p className="">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
-              excepturi, ullam quis qui, earum adipisci, impedit nam voluptas
-              consectetur laboriosam eligendi nostrum animi. Voluptas,
-              dignissimos? Quidem cum in recusandae optio autem! Soluta
-              quibusdam explicabo tempora laudantium minima, repudiandae
-              praesentium beatae. Quisquam, rem nihil dignissimos rerum numquam
-              tenetur sunt ex commodi culpa maiores nam dolorum necessitatibus
-              placeat delectus officiis deleniti assumenda dolores omnis
-              temporibus voluptate totam, corporis quasi consequuntur?
-              Doloremque quaerat totam ab eius in atque nihil facere blanditiis
-              odit rerum.
+              Desde 2011, nuestra institución educativa en Maldonado se dedica a
+              formar jóvenes con la preparación necesaria para enfrentar tanto
+              el ámbito laboral como el universitario, manteniendo siempre un
+              enfoque en la excelencia y la integridad académica. Nuestro
+              compromiso es brindar una educación integral, exigente y de alta
+              calidad, en un entorno que motiva a cada estudiante a desarrollar
+              su máximo potencial.
+              <br />
+              <br /> Contamos con un equipo docente altamente capacitado y
+              comprometido, quienes no solo enseñan conocimientos, sino que
+              también se convierten en referentes y ejemplos de profesionalismo
+              y dedicación. Creemos en la importancia de acompañar a los
+              estudiantes en cada etapa de su desarrollo, fomentando un espacio
+              donde puedan descubrir y disfrutar de actividades
+              extracurriculares que despierten sus intereses, encontrar amigos
+              que los apoyen y se conviertan en una red de compañerismo y crear
+              recuerdos que enriquezcan su formación personal. <br />
+              <br />
+              Nuestro propósito es preparar a nuestros egresados para los
+              desafíos futuros, tanto académicos como personales, asegurando que
+              posean las competencias y valores necesarios para enfrentar con
+              éxito su camino en el mundo laboral y universitario.
             </p>
           </div>
         </section>
@@ -53,18 +64,11 @@ export default function NosotrosPage() {
           backgroundBlendMode: "multiply",
         }}
       >
-        <div className="flex h-full w-full flex-col items-center justify-between px-[180px] md:flex-row md:gap-16">
-          {BANER_INFO.map(({ text, value }) => (
-            <div
-              key={text}
-              className="flex h-[30vh] w-full flex-col-reverse items-center justify-center gap-2"
-            >
-              <h2 className="text-white">{text}</h2>
-              <span className="text-7xl text-light-brown">
-                <Counter value={value} />
-              </span>
-            </div>
-          ))}
+        <div className="flex h-full w-full items-center justify-center px-[180px] text-center md:flex-row md:gap-16">
+          <h3 className="text-light-brown flex flex-col gap-3 text-4xl font-semibold ">
+            <span>14 AÑOS DE EXPERIENCIA</span>
+            <span className="text-3xl font-[400] text-white">FORMANDO ALUMNOS PARA EL MUNDO REAL</span>
+          </h3>
         </div>
       </section>
 
@@ -76,7 +80,7 @@ export default function NosotrosPage() {
             </div>
             <p className="px-5">
               Se trata de dos edificaciones independientes, entre ambas cuentan
-              con 23 salones, 15 baños, dos cantina, espacios abiertos de
+              con 23 salones, 4 baños, dos cantina, espacios abiertos de
               recreación, gimnasio cerrado, biblioteca, dos salas de proyección,
               salón de dibujo, sala de informática, dos laboratorios de física,
               química y biología, oficinas administrativas, amplia
