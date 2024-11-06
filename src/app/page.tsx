@@ -1,12 +1,14 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { CarruselComponent } from "@/components/CarouselComponent";
 import { Margin } from "@/components/Margin";
 import { Card } from "@/components/Card";
 import { Galleria } from "@/components/Galleria";
 import { MainTitle } from "@/components/MainTitle";
 import Image from "next/image";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 // DATOS
 import { CARDS_INFO } from "@/utils/consts";
@@ -18,7 +20,7 @@ import escudo from "/public/escudo.png";
 import misa from "/public/galeria/misa.jpg";
 import grupal from "/public/galeria/grupal2017.jpg";
 import handball from "/public/actividades/handball1.jpeg";
-import liceo from "../public/liceo3.jpg"
+import liceo from "../public/liceo3.jpg";
 
 // CARRUSEL
 import inscripcionesPc from "/public/carrusel/InscripcionesPC.png";
@@ -28,9 +30,12 @@ import inglesMOBILE from "/public/carrusel/inglesMOBILE.png";
 import egresadosPC from "/public/carrusel/egresadosPC.png";
 import egresadosMOBILE from "/public/carrusel/egresadosMOBILE.png";
 
+gsap.registerPlugin(ScrollTrigger);
+
 export default function Home() {
   const [isTop, setIsTop] = useState(true);
-
+  const buttonRef = useRef(null);
+  
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 0) {
@@ -46,6 +51,23 @@ export default function Home() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
+  useEffect(() => {
+    gsap.to(buttonRef.current, {
+      y: -15,
+      repeat: -1,
+      yoyo: true,
+      ease: "power1.inOut",
+      duration: 0.5,
+    });
+  }, []);
+
+  const handleScroll = () => {
+    window.scrollBy({
+      top: 800, // Desplaza hacia abajo 200px
+      behavior: "smooth", // Añade una transición suave
+    });
+  };
 
   return (
     <section className="h-full w-full bg-white pt-[8vh]">
@@ -85,7 +107,7 @@ export default function Home() {
               alt="Padre Domingo"
               width={400}
               height={530}
-              className="h-full w-full flex items-center justify-center"
+              className="flex h-full w-full items-center justify-center"
             />
           </div>
         </section>
@@ -93,9 +115,10 @@ export default function Home() {
         <div
           className={`will-change: opacity hidden w-full items-start justify-center pb-4 text-dark-brown opacity-100 transition duration-700 md:flex ${isTop ? "" : "md:hidden md:opacity-0"}`}
         >
-          <a href="#inicio" scroll-behavior="smooth">
+          <a scroll-behavior="smooth" onClick={handleScroll}>
             <svg
-              className="cursor-pointer transition duration-300 hover:translate-y-2"
+              ref={buttonRef}
+              className="cursor-pointer"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
               width={45}
@@ -123,7 +146,13 @@ export default function Home() {
           <div className="flex items-center justify-start px-5 pb-5">
             <MainTitle text="IMAGENES" />
           </div>
-          <Galleria img1={egresadosMOBILE} img2={misa} img3={grupal} img4={handball} img5={liceo}/>
+          <Galleria
+            img1={egresadosMOBILE}
+            img2={misa}
+            img3={grupal}
+            img4={handball}
+            img5={liceo}
+          />
         </Margin>
       </section>
     </section>

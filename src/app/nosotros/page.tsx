@@ -52,7 +52,7 @@ export default function NosotrosPage() {
       </Margin>
 
       <section
-        className="h-screen w-full md:h-[30vh]"
+        className="hidden h-screen w-full md:block md:h-[30vh]"
         style={{
           backgroundImage: `url(${deportes.src})`,
           backgroundRepeat: "no-repeat",
@@ -64,9 +64,18 @@ export default function NosotrosPage() {
         }}
       >
         <div className="flex h-full w-full items-center justify-center px-[180px] text-center md:flex-row md:gap-16">
-          <h3 className="text-light-brown flex flex-col gap-3 text-4xl font-semibold ">
-            <span>14 AÑOS DE EXPERIENCIA</span>
-            <span className="text-3xl font-[400] text-white">FORMANDO ALUMNOS PARA EL MUNDO REAL</span>
+          <h3 className="flex flex-col gap-3 text-4xl font-semibold text-light-brown">
+            <div className="flex w-full items-center justify-center gap-6">
+              <span className="text-9xl text-primary-color">14</span>
+              <div className="flex h-full flex-col items-start justify-center gap-3 font-[400] text-white">
+                <span>AÑOS</span>
+                <span>DE EXPERIENCIA</span>
+              </div>
+            </div>
+
+            <span className="text-3xl">
+              FORMANDO ALUMNOS PARA EL MUNDO REAL
+            </span>
           </h3>
         </div>
       </section>
@@ -88,7 +97,7 @@ export default function NosotrosPage() {
               accesibilidad.
             </p>
 
-            <section className="flex flex-col gap-5 px-5 md:flex-row md:gap-28">
+            <section className="flex flex-col gap-5 px-5 md:flex-row md:gap-[104px]">
               <ul className="flex flex-col items-start justify-between gap-5">
                 {LIST_INFO.slice(0, 3).map(({ title, id }) => (
                   <li
