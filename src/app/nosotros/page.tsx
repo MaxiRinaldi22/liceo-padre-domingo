@@ -64,16 +64,16 @@ export default function NosotrosPage() {
         }}
       >
         <div className="flex h-full w-full items-center justify-center px-[180px] text-center md:flex-row md:gap-16">
-          <h3 className="flex flex-col gap-3 text-4xl font-semibold text-light-brown">
+          <h3 className="flex flex-col gap-3 text-4xl font-semibold">
             <div className="flex w-full items-center justify-center gap-6">
-              <span className="text-9xl text-primary-color">14</span>
-              <div className="flex h-full flex-col items-start justify-center gap-3 font-[400] text-white">
+              <span className="text-8xl text-primary-color">14</span>
+              <div className="flex h-full text-2xl flex-col items-start justify-center gap-3 font-[400] text-white">
                 <span>AÑOS</span>
                 <span>DE EXPERIENCIA</span>
               </div>
             </div>
 
-            <span className="text-3xl">
+            <span className="text-2xl font-[300] text-light-brown">
               FORMANDO ALUMNOS PARA EL MUNDO REAL
             </span>
           </h3>
