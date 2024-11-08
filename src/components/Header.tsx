@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Dialog, DialogPanel, PopoverGroup } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { PAGES_ENDPONTS } from "../utils/consts";
@@ -9,10 +9,13 @@ import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { Icon } from "@/utils/Icons";
+import { gsap } from "gsap";
+import React from "react";
 
 function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-
+  const seccionRef = useRef<HTMLAnchorElement[]>([]);
+  const lineRef = useRef<HTMLHRElement[]>([]);
   const pathname = usePathname();
 
   const isActive = (path: string) => {
@@ -33,8 +36,34 @@ function Header() {
     );
   };
 
-  console.log(isActividades("ACTIVIDADES"));
-  
+  useEffect(() => {
+    PAGES_ENDPONTS.forEach((_, index) => {
+      const animation = gsap.to(lineRef.current[index] as HTMLElement, {
+        width: "100%",
+        duration: 0.2,
+        paused: true,
+      });
+
+      const handleMouseEnter = () => animation.play();
+      const handleMouseLeave = () => animation.reverse();
+
+      const seccion = seccionRef.current[index];
+      if (seccion) {
+        seccion.addEventListener("mouseenter", handleMouseEnter);
+        seccion.addEventListener("mouseleave", handleMouseLeave);
+      }
+
+      return () => {
+        if (seccion) {
+          seccion.removeEventListener("mouseenter", handleMouseEnter);
+          seccion.removeEventListener("mouseleave", handleMouseLeave);
+        }
+      };
+    });
+  }, [pathname]);
+
+  console.log(seccionRef);
+  console.log(lineRef);
 
   return (
     <header
@@ -61,19 +90,36 @@ function Header() {
         </div>
 
         <PopoverGroup className="hidden lg:flex lg:gap-x-6">
-          {PAGES_ENDPONTS.map((page) => (
+          {PAGES_ENDPONTS.map((page, id) => (
             <Link
+              ref={(el) => {
+                if (el) {
+                  seccionRef.current[id] = el;
+                }
+              }}
               key={page.name}
               href={page.href}
-              className={`px-3 py-1 text-[11px] font-semibold text-light-brown transition-transform duration-300 will-change-transform hover:scale-110 ${
+              className={`text-[11px] font-semibold text-light-brown ${
                 isActive(page.href) || isActividades(page.name)
                   ? "border-b-2 border-light-brown"
                   : ""
               }`}
             >
-              <div className="flex items-center gap-1">
-                <Icon path={page.path} />
-                <p>{page.name}</p>
+              <div className="flex flex-col gap-1">
+                <div className="flex items-center gap-1">
+                  <Icon path={page.path} />
+                  <p>{page.name}</p>
+                </div>
+                {!isActive(page.href) && (
+                  <hr
+                    ref={(el) => {
+                      if (el) {
+                        lineRef.current[id] = el;
+                      }
+                    }}
+                    className="w-0 border-b border-light-brown"
+                  />
+                )}
               </div>
             </Link>
           ))}

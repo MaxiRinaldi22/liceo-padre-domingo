@@ -9,6 +9,8 @@ import { MainTitle } from "@/components/MainTitle";
 import Image from "next/image";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 // DATOS
 import { CARDS_INFO } from "@/utils/consts";
@@ -62,6 +64,14 @@ export default function Home() {
     });
   }, []);
 
+  useEffect(() => {
+    AOS.init({
+      duration: 700,
+      easing: 'ease-in-out',
+      once: true
+    });
+  }, [])
+
   const handleScroll = () => {
     window.scrollBy({
       top: 800, 
@@ -103,6 +113,7 @@ export default function Home() {
 
           <div className="hidden h-full min-w-60 lg:block">
             <Image
+            data-aos="fade-up"
               src={escudo}
               alt="Padre Domingo"
               width={400}
