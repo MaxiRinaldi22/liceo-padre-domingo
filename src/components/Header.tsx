@@ -19,12 +19,29 @@ function Header() {
     return pathname === path;
   };
 
+  const isActividades = (path: string) => {
+    return (
+      path === "ACTIVIDADES" &&
+      [
+        "/actividades/voluntariado",
+        "/actividades/ingles",
+        "/actividades/coroybaile",
+        "/actividades/handball",
+        "/actividades/futbol",
+        "/actividades/basquet",
+      ].includes(pathname)
+    );
+  };
+
+  console.log(isActividades("ACTIVIDADES"));
+  
+
   return (
     <header
       className={
         mobileMenuOpen
           ? "z-999 absolute left-0 top-0"
-          : "fixed left-0 top-0 z-50 flex h-[8vh] w-full items-center justify-between bg-primary-color py-10 "
+          : "fixed left-0 top-0 z-50 flex h-[8vh] w-full items-center justify-between bg-primary-color py-10"
       }
     >
       <nav className="mx-auto flex w-full max-w-7xl items-center justify-between p-6 lg:px-8">
@@ -49,7 +66,9 @@ function Header() {
               key={page.name}
               href={page.href}
               className={`px-3 py-1 text-[11px] font-semibold text-light-brown transition-transform duration-300 will-change-transform hover:scale-110 ${
-                isActive(page.href) ? "border-b-2 border-light-brown" : ""
+                isActive(page.href) || isActividades(page.name)
+                  ? "border-b-2 border-light-brown"
+                  : ""
               }`}
             >
               <div className="flex items-center gap-1">
@@ -66,7 +85,7 @@ function Header() {
         className="lg:hidden"
       >
         <div className="fixed inset-0 z-10" />
-        <DialogPanel className="fixed inset-y-0 right-0 z-10 h-[325px] w-full overflow-y-auto bg-primary-color  sm:ring-1">
+        <DialogPanel className="fixed inset-y-0 right-0 z-10 h-[325px] w-full overflow-y-auto bg-primary-color sm:ring-1">
           <div className="flex h-[8vh] items-center justify-between p-6 py-10">
             <a href="#">
               <Image src={escudo} alt="Escudo" width={50} height={50} />

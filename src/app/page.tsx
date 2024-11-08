@@ -64,8 +64,8 @@ export default function Home() {
 
   const handleScroll = () => {
     window.scrollBy({
-      top: 800, // Desplaza hacia abajo 200px
-      behavior: "smooth", // Añade una transición suave
+      top: 800, 
+      behavior: "smooth",
     });
   };
 

@@ -270,7 +270,7 @@ export const ACTIVIDADES_DATA: ActividadesCardProps[] = [
     images: [anglo],
   },
   {
-    id: "coro-baile",
+    id: "coroybaile",
     title: "CORO Y BAILE",
     shortDescription:
       "Coro y baile permiten a nuestros estudiantes expresarse creativamente y fortalecer la confianza en equipo.",

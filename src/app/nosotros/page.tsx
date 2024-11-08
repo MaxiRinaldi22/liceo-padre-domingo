@@ -87,7 +87,7 @@ export default function NosotrosPage() {
               <MainTitle text="INFRAESTRUCTURA" />
             </div>
             <p className="px-5">
-              Se trata de dos edificaciones independientes, entre ambas cuentan
+              Se trata de dos edificaciones independientes, entre ambas contamos
               con 23 salones, 4 baños, dos cantina, espacios abiertos de
               recreación, gimnasio cerrado, biblioteca, dos salas de proyección,
               salón de dibujo, sala de informática, dos laboratorios de física,
