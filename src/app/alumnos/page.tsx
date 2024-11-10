@@ -49,13 +49,13 @@ export default function AlunosPage() {
                 </div>
                 <div className="groupmd:w-full md:flex md:items-center md:justify-centernp,m ">
                   {openItems.includes(id) && (
-                    <div className="md:h-[700px] md:w-[700px]">
+                    <div className="md:h-[550px] md:w-[700px]">
                       <Image
                         src={item.horarios}
                         alt={item.curso}
                         width={700}
-                        height={700}
-                        className="h-auto w-full object-cover"
+                        height={550}
+                        className="w-full object-cover"
                       />
                     </div>
                   )}

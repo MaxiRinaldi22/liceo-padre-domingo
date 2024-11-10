@@ -16,8 +16,8 @@ export default function NosotrosPage() {
   return (
     <section className="bg-white pt-[8vh]">
       <Margin>
-        <section className="flex min-h-[55vh] w-full flex-col-reverse justify-between px-5 py-10 md:flex-row-reverse md:py-10">
-          <Image src={aniversario} alt="escudo" width={400} height={430} />
+        <section className="flex min-h-[55vh] w-full flex-col-reverse justify-between px-5 py-10 md:py-10 2xl:flex-row-reverse">
+          <Image src={aniversario} alt="escudo" width={400} height={430}  className="h-full w-full object-cover"/>
           <div
             id="quienes-somos"
             className="flex flex-col justify-center gap-5"
@@ -67,7 +67,7 @@ export default function NosotrosPage() {
           <h3 className="flex flex-col gap-3 text-4xl font-semibold">
             <div className="flex w-full items-center justify-center gap-6">
               <span className="text-8xl text-primary-color">14</span>
-              <div className="flex h-full text-2xl flex-col items-start justify-center gap-3 font-[400] text-white">
+              <div className="flex h-full flex-col items-start justify-center gap-3 text-2xl font-[400] text-white">
                 <span>AÑOS</span>
                 <span>DE EXPERIENCIA</span>
               </div>
@@ -82,7 +82,7 @@ export default function NosotrosPage() {
 
       <section id="infraestructura" className="bg-white">
         <Margin>
-          <div className="flex flex-col gap-10 py-10">
+          <div className="flex flex-col gap-10 md:py-10">
             <div id="infraestructura" className="px-5">
               <MainTitle text="INFRAESTRUCTURA" />
             </div>

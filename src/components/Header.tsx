@@ -16,6 +16,7 @@ function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const seccionRef = useRef<HTMLAnchorElement[]>([]);
   const lineRef = useRef<HTMLHRElement[]>([]);
+
   const pathname = usePathname();
 
   const isActive = (path: string) => {
@@ -40,7 +41,7 @@ function Header() {
     PAGES_ENDPONTS.forEach((_, index) => {
       const animation = gsap.to(lineRef.current[index] as HTMLElement, {
         width: "100%",
-        duration: 0.2,
+        duration: 0.4,
         paused: true,
       });
 
@@ -62,8 +63,6 @@ function Header() {
     });
   }, [pathname]);
 
-  console.log(seccionRef);
-  console.log(lineRef);
 
   return (
     <header
