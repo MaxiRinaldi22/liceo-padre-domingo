@@ -32,7 +32,7 @@ export default function Footer() {
                 <Icon path={ubiPath} />
               </div>
               <p className="pr-5">
-                Ventura Alegre calle Ventura Alegre, 20000 Maldonado,
+                Ventura Alegre entre Rincon y San Carlos,
                 Departamento de Maldonado
               </p>
             </div>
