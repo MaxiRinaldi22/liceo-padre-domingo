@@ -13,7 +13,7 @@ import escudo from "/public/escudo.png";
 export const NOTICIAS_INFO: Noticias[] = [
     {
         title: "Nueva pagina web",
-        date: "Noviembre 4, 2024",
+        date: "Noviembre 18, 2024",
         text: "Estrenamos nuestra nueva página web, brindando información actualizada y recursos educativos para estudiantes, familias y docentes.",
         img: escudo,
     },
