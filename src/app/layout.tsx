@@ -1,12 +1,13 @@
 import Header from "@/components/Header";
 import { montserrat } from "@/utils/fonts";
+import { Analytics } from "@vercel/analytics/react"
 import Footer from "@/components/Footer";
 import "./globals.css";
 
 export const metadata = {
   title: "Liceo Padre Domingo",
   description:
-    "Liceo Habilitado Padre Domingo, ubicado en Maldonado, fortaleciendo los valores para educar con valor y respeto",
+    "Descubre el Liceo Habilitado Padre Domingo en Maldonado, fortaleciendo los valores para educar con valor y respeto",
 };
 
 export default function RootLayout({
@@ -20,6 +21,7 @@ export default function RootLayout({
         <Header />
         <main>{children}</main>
         <Footer />
+        <Analytics />
       </body>
     </html>
   );

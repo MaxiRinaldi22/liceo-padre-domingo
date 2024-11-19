@@ -142,10 +142,11 @@ export default function NosotrosPage() {
                   <div key={id}>
                     <Image
                       src={img}
-                      alt={`Imagen ${id}`}
+                      alt="Infraestructura moderna del liceo en Maldonado"
                       width={350}
                       height={500}
                       className="h-[500px] w-[400px] transform object-cover shadow-xl"
+
                     />
                   </div>
                 ))}
