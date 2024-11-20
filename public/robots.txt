@@ -1,0 +1,9 @@
+# Archivo robots.txt para colegiopadredomingo.edu.uy
+
+# Aplica las reglas a todos los bots
+User-agent: *
+
+# Permitir rastrear todo lo demás
+Allow: /
+Allow: /favicon.ico
+Allow: /sitemap.xml
