@@ -2,10 +2,14 @@ import Header from "@/components/Header";
 import { montserrat } from "@/utils/fonts";
 import { Analytics } from "@vercel/analytics/react"
 import Footer from "@/components/Footer";
+import { Metadata } from "next";
 import "./globals.css";
 
-export const metadata = {
-  title: "Liceo Padre Domingo",
+export const metadata : Metadata = {
+  title: {
+    default: "Liceo Padre Domingo",
+    template: "%s | Liceo Padre Domingo",
+  },
   description:
     "Descubre el Liceo Habilitado Padre Domingo en Maldonado, fortaleciendo los valores para educar con valor y respeto",
 };

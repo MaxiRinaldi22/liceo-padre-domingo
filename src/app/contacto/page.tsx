@@ -4,6 +4,12 @@ import { Margin } from "@/components/Margin";
 import { mailPath, phonePath, ubiPath } from "@/utils/consts";
 import Image from "next/image";
 import mapa from "/public/Mapa.png";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Contacto",
+}
+
 
 export default function ContactoPage() {
   const horarioPath = (

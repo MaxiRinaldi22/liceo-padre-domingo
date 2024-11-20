@@ -94,10 +94,10 @@ export default function Home() {
           className={`flex min-h-[45vh] flex-col items-center justify-center p-5  md:gap-10 md:pb-0 lg:flex-row ${!isTop ? "md:mb-[50px]" : ""}`}
         >
           <div className="flex flex-col justify-center gap-5">
-            <h1 className="border-l-2 border-dark-brown px-2 text-lg font-semibold text-black md:text-2xl">
+            <div className="border-l-2 border-dark-brown px-2 text-lg font-semibold text-black md:text-2xl">
               BIENVENIDOS A EL <br />
-              <span className="text-2xl md:text-5xl"> LICEO PADRE DOMINGO</span>
-            </h1>
+              <h1 className="text-2xl md:text-5xl"> LICEO PADRE DOMINGO</h1>
+            </div>
             <p className="text-lg text-black text-balance">
               Somos un espacio dedicado a la formación integral de nuestros
               estudiantes, inspirado en los valores y la enseñanza del Padre

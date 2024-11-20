@@ -7,6 +7,11 @@ import { MainTitle } from "@/components/MainTitle";
 import aniversario from "/public/aniversario.png";
 import Image from "next/image";
 import deportes from "@/public/deportes.jpg";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Nosotros",
+};
 
 export default function NosotrosPage() {
   const [img1, img2, img3] = INFRAESTRUCTURA_INFO.slice(0, 3).map(
@@ -17,7 +22,13 @@ export default function NosotrosPage() {
     <section className="bg-white pt-[8vh]">
       <Margin>
         <section className="flex min-h-[55vh] w-full flex-col-reverse justify-between px-5 py-10 md:py-10 2xl:flex-row-reverse">
-          <Image src={aniversario} alt="escudo" width={400} height={430}  className="h-full w-full object-cover"/>
+          <Image
+            src={aniversario}
+            alt="escudo"
+            width={400}
+            height={430}
+            className="h-full w-full object-cover"
+          />
           <div
             id="quienes-somos"
             className="flex flex-col justify-center gap-5"
@@ -146,7 +157,6 @@ export default function NosotrosPage() {
                       width={350}
                       height={500}
                       className="h-[500px] w-[400px] transform object-cover shadow-xl"
-
                     />
                   </div>
                 ))}

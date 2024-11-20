@@ -2,6 +2,12 @@ import { ActividadesCard } from "@/components/ActividadesCard";
 import { MainTitle } from "@/components/MainTitle";
 import { Margin } from "@/components/Margin";
 import { ACTIVIDADES_DATA } from "@/utils/consts";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Actividades",
+}
+
 
 export default function ActividadesMainPage() {
   return (

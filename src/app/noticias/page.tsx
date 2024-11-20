@@ -1,7 +1,13 @@
 import { MainTitle } from "@/components/MainTitle";
 import { Margin } from "@/components/Margin";
 import { NOTICIAS_INFO } from "@/utils/noticias";
+import { Metadata } from "next";
 import Image from "next/image";
+
+export const metadata: Metadata = {
+  title: "Noticias",
+}
+
 
 export default function NoticiasPage() {
   return (

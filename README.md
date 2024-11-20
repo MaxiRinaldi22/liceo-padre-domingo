@@ -1,3 +1,4 @@
 # TODO
 
-- Hacer el baner mas estetico
+Hacer que los title y los description sean dinamicos
+Cambiar alumnos por horarios
