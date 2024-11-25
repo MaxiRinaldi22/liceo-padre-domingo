@@ -5,7 +5,6 @@ type GalleriaProps = {
   img2: StaticImageData;
   img3: StaticImageData;
   img4: StaticImageData;
-
   img5: StaticImageData;
 };
 
@@ -18,7 +17,7 @@ export function Galleria({ img1, img2, img3, img4, img5 }: GalleriaProps) {
             <div className="group relative flex flex-grow flex-col overflow-hidden rounded-md px-4 pb-4 pt-40">
               <Image
                 src={img1}
-                alt=""
+                alt="Imagen de alumnos egresados del Liceo Padre Domingo"
                 className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
@@ -28,7 +27,7 @@ export function Galleria({ img1, img2, img3, img4, img5 }: GalleriaProps) {
             <div className="group relative mb-4 flex flex-col overflow-hidden rounded-md px-4 pb-4 pt-40">
               <Image
                 src={img2}
-                alt=""
+                alt="Imagen de los alumnos del Liceo Padre Domingo en misa"
                 className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
@@ -37,17 +36,16 @@ export function Galleria({ img1, img2, img3, img4, img5 }: GalleriaProps) {
               <div className="group relative flex flex-col overflow-hidden rounded-md px-4 pb-4 pt-40">
                 <Image
                   src={img3}
-                  alt=""
+                  alt="Imagen de alumnos del Liceo Padre Domingo en un viaje"
                   className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
               </div>
               <div className="group relative flex flex-col overflow-hidden rounded-md px-4 pb-4 pt-40">
-                {" "}
                 /
                 <Image
                   src={img4}
-                  alt=""
+                  alt="Imagen de alumnos del Liceo Padre Domingo en una competicion deportiva"
                   className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
@@ -58,7 +56,7 @@ export function Galleria({ img1, img2, img3, img4, img5 }: GalleriaProps) {
             <div className="group relative flex flex-grow flex-col overflow-hidden rounded-md px-4 pb-4 pt-40">
               <Image
                 src={img5}
-                alt=""
+                alt="Imagen de la moderna infraestructura del Liceo Padre Domingo"
                 className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
