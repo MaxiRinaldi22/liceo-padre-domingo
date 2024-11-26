@@ -74,7 +74,7 @@ function Header() {
     >
       <nav className="mx-auto flex w-full max-w-7xl items-center justify-between p-6 lg:px-8">
         <div className="flex lg:flex-1">
-          <Link href="/">
+          <Link href="/" onClick={() => setMobileMenuOpen(false)}>
             <Image src={escudo} alt="Escudo" width={50} height={50} />
           </Link>
         </div>
@@ -132,7 +132,7 @@ function Header() {
         <div className="fixed inset-0 z-10" />
         <DialogPanel className="fixed inset-y-0 right-0 z-10 h-[325px] w-full overflow-y-auto bg-primary-color sm:ring-1">
           <div className="flex h-[8vh] items-center justify-between p-6 py-10">
-            <Link href="/">
+            <Link href="/" onClick={() => setMobileMenuOpen(false)}>
               <Image src={escudo} alt="Escudo" width={50} height={50} />
             </Link>
             <button
