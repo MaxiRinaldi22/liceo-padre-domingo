@@ -48,7 +48,7 @@ export default function Footer() {
         <hr />
         <div className="flex w-full items-center justify-between px-2 py-3">
           <p className="text-sm text-black">
-            © Copyright Liceo Padre Domingo 2024
+            © Copyright Liceo Padre Domingo {new Date().getFullYear()}
           </p>
           <div className="flex gap-3">
             <button>
